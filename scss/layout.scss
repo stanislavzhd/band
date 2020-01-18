@@ -1,0 +1,11 @@
+$container: 1490px; 
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: $container;
+    width: 100%;
+    margin: 0 auto;
+}
