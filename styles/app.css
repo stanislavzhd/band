@@ -17,7 +17,6 @@
 body {
   font-family: 'Oswald', sans-serif;
   font-size: 18px;
-  background: #000;
   background-size: cover; }
 
 .preloader {
@@ -58,26 +57,28 @@ body {
   padding-right: 15px; }
 
 .gw-header {
-  position: fixed;
+  background: #000;
   min-height: 100vh;
   width: 100%;
   transition: .4s; }
   .gw-header__title {
-    font-size: 5.555em;
+    font-size: 5.5em;
     font-weight: bold;
     text-transform: uppercase;
     color: #e4dddb;
-    padding-top: 5rem; }
+    padding-top: 7.5rem; }
 
 span {
-  color: #000; }
+  color: #e4dddb; }
 
 .gw-nav {
+  position: fixed;
   font-family: 'Lora', serif;
   font-weight: bold;
   text-transform: uppercase;
   display: flex;
-  padding-top: 5rem; }
+  padding-top: 2.5rem;
+  z-index: 3; }
   .gw-nav__item {
     padding-right: 25px;
     color: #e4dddb;
@@ -92,3 +93,44 @@ video {
   object-fit: cover;
   object-position: center;
   opacity: 0.5; }
+
+.about {
+  background-color: #f2efee; }
+
+.name {
+  color: #241c18; }
+
+.gw-slider {
+  position: relative;
+  max-width: 80%;
+  margin: 0 auto; }
+  .gw-slider__image {
+    max-width: 100%; }
+  .gw-slider__text {
+    position: absolute;
+    bottom: 2.875rem;
+    left: 91.9375rem; }
+  .gw-slider__text--name {
+    font-size: 4.555em;
+    text-transform: uppercase;
+    color: #826b60;
+    text-align: center;
+    margin: 0; }
+  .gw-slider__textarea {
+    position: absolute;
+    bottom: 2.875rem;
+    left: 114.9375rem;
+    width: 445px; }
+  .gw-slider__title {
+    font-size: 2em;
+    font-weight: 400;
+    margin: 0;
+    text-align: center; }
+  .gw-slider__description {
+    font-family: 'Lora', serif;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0;
+    padding-top: 2.75rem;
+    line-height: 2;
+    color: #241c18; }

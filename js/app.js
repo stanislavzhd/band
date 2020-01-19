@@ -5,5 +5,7 @@ document.body.onload = function () {
         if (!preloader.classList.contains("done")) {
             preloader.classList.add("done")
         }
-    }, 2000);
-}
+    }, 1500);
+};
+
+$('.gw-slider').slick();
