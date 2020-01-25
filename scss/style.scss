@@ -71,8 +71,9 @@ body{
     }
 }
 
-span{
+.title{
     color: #e4dddb;
+    font-size: 5.5em;
 }
 
 .gw-nav{
@@ -114,6 +115,7 @@ video{
 
 .name{
     color: #241c18;
+    font-size: 4.555em;
 }
 
 .gw-slider{
@@ -290,6 +292,7 @@ video{
                     position: absolute;
                     right: 0;
                     margin: 0;
+                    padding-right: 1rem;
                     font-family: 'Lora', serif;
                     font-size: 1rem;
                     color: #826b60;
@@ -301,3 +304,91 @@ video{
 }
 
 // end discography
+
+// start tours
+
+.gw-tours{
+    background-color: #f1eeed;
+    padding-bottom: 7.5rem;
+
+    &-title{
+        padding-top: 5rem;
+        padding-bottom: 3.75rem;
+        font-size: 3em;
+        font-weight: 400;
+        color: #241c18;
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    &-slider{
+        position: relative;
+        max-width: 80%;
+        margin: 0 auto;
+    
+        &__content{
+            font-size: 0.888em;
+            font-weight: 700;
+            color: #826b60;
+            text-transform: uppercase;
+            padding: 20px 0;
+        }
+    }
+
+    &-dates{
+        position: relative;
+        margin: 0 auto;
+        padding: 0 5rem;
+        overflow: auto;
+        overflow-x: hidden;
+        width: 100%;
+        height: 22.5625rem;
+
+        &__item{
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding: 1.35rem 0;
+            border-bottom: 2px dotted #826b60;
+
+            &-date{
+                font-size: 3.6em;
+                font-weight: 700;
+                color: #241c18;
+                padding-right: 0.625rem;
+                margin: 0;
+            }
+
+            &-name{
+                font-size: 1.66em;
+                font-weight: 300;
+                color: #241c18;
+                padding-left: 1.25rem;
+                margin: 0;
+            }
+
+            &-buy{
+                position: absolute;
+                right: 0;
+                margin: 0;
+                font-size: 1em;
+                font-weight: 400;
+                text-transform: uppercase;
+                color: #fff;
+                background-color: #826b60;
+                padding: 10px 25px;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+span{
+    font-size: 1.377em;
+    font-weight: 700;
+    color: #241c18; 
+    text-transform: uppercase;
+}
+
+// end tours
