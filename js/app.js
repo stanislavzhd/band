@@ -8,7 +8,29 @@ document.body.onload = function () {
     }, 1500);
 };
 
-$('.gw-slider').slick();
+$('.gw-slider').slick({
+    slidesToShow: 1,
+    infinite: true,
+    prevArrow: "<img src='images/left_arrow.png' class='prev' alt='1'>",
+    nextArrow: "<img src='images/right_arrow.png' class='next' alt='2'>",
+});
+
+let filter = $("[data-filter]");
+filter.on("click", function () {
+
+    let cat = $(this).data("filter");
+
+    $("[data-cat]").each(function () {
+
+        let workCat = $(this).data("cat");
+
+        if (workCat != cat) {
+            $(this).addClass("hide");
+        } else {
+            $(this).removeClass("hide");
+        }
+    })
+});
 
 $('.gw-tours-slider').slick({
     centerMode: true,
