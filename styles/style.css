@@ -11,39 +11,6 @@ body {
   font-size: 18px;
   background-size: cover; }
 
-.preloader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  z-index: 5;
-  transition: 1s;
-  opacity: 1;
-  visibility: visible; }
-  .preloader.done {
-    opacity: 0;
-    visibility: hidden; }
-
-.loader {
-  width: 200px;
-  height: 200px;
-  border: 10px solid white;
-  border-top-color: #958177;
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  animation: 3s loader infinite linear; }
-
-@keyframes loader {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg); }
-  to {
-    transform: translate(-50%, -50%) rotate(360deg); } }
-
 .container {
   padding-left: 15px;
   padding-right: 15px; }
@@ -291,3 +258,83 @@ span {
   font-weight: 700;
   color: #241c18;
   text-transform: uppercase; }
+
+.gw-contacts {
+  text-align: center;
+  padding-top: 10rem;
+  background-image: url(../images/background_footer.jpg); }
+  .gw-contacts-title {
+    font-size: 4.444em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #241c18;
+    margin: 0; }
+  .gw-contacts-phone {
+    width: 45%;
+    font-size: 4em;
+    font-weight: 700;
+    color: #e4dddb;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    border-bottom: 2px dotted #e4dddb; }
+  .gw-contacts-subcsribe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+    margin: 0 auto;
+    padding-top: 2.25rem;
+    padding-bottom: 25rem; }
+    .gw-contacts-subcsribe__form {
+      width: 75%; }
+    .gw-contacts-subcsribe__button {
+      width: 100%;
+      height: 3.375rem;
+      text-transform: uppercase;
+      font-size: 2em;
+      font-weight: 700;
+      background-color: inherit;
+      color: #241c18;
+      border: 3px solid #241c18;
+      text-align: left;
+      cursor: pointer;
+      padding-left: 2.25rem;
+      position: relative;
+      transition: .5s;
+      overflow: hidden; }
+      .gw-contacts-subcsribe__button::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #241c18;
+        top: 0;
+        left: -100%;
+        transition: .7s; }
+      .gw-contacts-subcsribe__button:hover, .gw-contacts-subcsribe__button:active {
+        color: #e4dddb;
+        text-align: right; }
+      .gw-contacts-subcsribe__button:hover::before {
+        left: 0; }
+
+.gw-footer-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 4.8125rem; }
+
+.gw-footer-copyright {
+  font-size: 1em;
+  font-weight: 700;
+  color: #e4dddb;
+  text-transform: uppercase; }
+
+.gw-footer-nav {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  text-transform: uppercase; }
+  .gw-footer-nav__item {
+    font-size: 1em;
+    color: #e4dddb;
+    text-decoration: none;
+    padding-left: 1.875rem; }
