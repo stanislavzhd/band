@@ -113,11 +113,6 @@ video{
     background-color: #f2efee;
 }
 
-.name{
-    color: #241c18;
-    font-size: 4.555em;
-}
-
 .gw-slider{
     position: relative;
     max-width: 80%;
@@ -127,25 +122,35 @@ video{
         max-width: 100%;
     }
 
-    &__text{
+    &__block{
         position: absolute;
-        bottom: 2.875rem;
-        left: 91.9375rem;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 3.1875rem;
     }
 
-    &__text--name{
-        font-size: 4.555em;
+    &__text{
+        width: 50%;  
+        font-size: 3em;  
         text-transform: uppercase;
-        color: #826b60;
         text-align: center;
-        margin: 0;
+        padding-top: 5rem;
+        padding-left: 17rem;
+
+        &--name{
+            color: #826b60;
+            margin: 0;
+        }
+
+        &--surname{
+            color: #241c18;
+        }
     }
 
     &__textarea{
-        position: absolute;
-        bottom: 2.875rem;
-        left: 114.9375rem;
-        width: 445px;
+        width: 40%;
     }
 
     &__title{
@@ -399,6 +404,8 @@ span{
     text-align: center;
     padding-top: 10rem;
     background-image: url(../images/background_footer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 
     &-title{
         font-size: 4.444em;

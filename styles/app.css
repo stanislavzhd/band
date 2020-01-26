@@ -65,31 +65,33 @@ video {
 .gw-about {
   background-color: #f2efee; }
 
-.name {
-  color: #241c18;
-  font-size: 4.555em; }
-
 .gw-slider {
   position: relative;
   max-width: 80%;
   margin: 0 auto; }
   .gw-slider__image {
     max-width: 100%; }
+  .gw-slider__block {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3.1875rem; }
   .gw-slider__text {
-    position: absolute;
-    bottom: 2.875rem;
-    left: 91.9375rem; }
-  .gw-slider__text--name {
-    font-size: 4.555em;
+    width: 50%;
+    font-size: 3em;
     text-transform: uppercase;
-    color: #826b60;
     text-align: center;
-    margin: 0; }
+    padding-top: 5rem;
+    padding-left: 17rem; }
+    .gw-slider__text--name {
+      color: #826b60;
+      margin: 0; }
+    .gw-slider__text--surname {
+      color: #241c18; }
   .gw-slider__textarea {
-    position: absolute;
-    bottom: 2.875rem;
-    left: 114.9375rem;
-    width: 445px; }
+    width: 40%; }
   .gw-slider__title {
     font-size: 2em;
     font-weight: 400;
@@ -270,7 +272,9 @@ span {
 .gw-contacts {
   text-align: center;
   padding-top: 10rem;
-  background-image: url(../images/background_footer.jpg); }
+  background-image: url(../images/background_footer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
   .gw-contacts-title {
     font-size: 4.444em;
     font-weight: 700;
