@@ -11,39 +11,6 @@ body {
   font-size: 18px;
   background-size: cover; }
 
-.preloader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  z-index: 5;
-  transition: 1s;
-  opacity: 1;
-  visibility: visible; }
-  .preloader.done {
-    opacity: 0;
-    visibility: hidden; }
-
-.loader {
-  width: 200px;
-  height: 200px;
-  border: 10px solid white;
-  border-top-color: #958177;
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  animation: 3s loader infinite linear; }
-
-@keyframes loader {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg); }
-  to {
-    transform: translate(-50%, -50%) rotate(360deg); } }
-
 .container {
   padding-left: 15px;
   padding-right: 15px; }
@@ -143,7 +110,8 @@ video {
   left: 0;
   z-index: 1; }
   .prev:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    opacity: .7; }
 
 .next {
   position: absolute;
@@ -151,7 +119,8 @@ video {
   top: 50%;
   right: 0; }
   .next:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    opacity: .7; }
 
 .gw-music {
   background-color: #f8f8f8; }
@@ -213,6 +182,9 @@ video {
         padding: 10px 25px;
         border: none;
         cursor: pointer; }
+        .gw-discography-album__item-buy:hover, .gw-discography-album__item-buy:active, .gw-discography-album__item-buy:focus-within {
+          background-color: #000;
+          color: #f2efee; }
   .gw-discography-playlist {
     width: 45%; }
     .gw-discography-playlist__album {
@@ -256,6 +228,15 @@ video {
 .hide {
   display: none; }
 
+.gw-discography-album__item-left {
+  width: 100%; }
+
+.gw-discography-album__item-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; }
+
 .gw-tours {
   background-color: #f1eeed;
   padding-bottom: 7.5rem; }
@@ -276,7 +257,9 @@ video {
       font-weight: 700;
       color: #826b60;
       text-transform: uppercase;
-      padding: 20px 0; }
+      padding: 20px 0;
+      text-align: center;
+      transform: rotate(90deg); }
   .gw-tours-dates {
     position: relative;
     margin: 0 auto;
@@ -290,7 +273,8 @@ video {
       align-items: center;
       position: relative;
       padding: 1.35rem 0;
-      border-bottom: 2px dotted #826b60; }
+      border-bottom: 2px dotted #826b60;
+      text-transform: uppercase; }
       .gw-tours-dates__item-date {
         font-size: 3.6em;
         font-weight: 700;
@@ -315,6 +299,9 @@ video {
         padding: 10px 25px;
         border: none;
         cursor: pointer; }
+        .gw-tours-dates__item-buy:hover, .gw-tours-dates__item-buy:active, .gw-tours-dates__item-buy:focus-within {
+          background-color: #000;
+          color: #f2efee; }
 
 span {
   font-size: 1.377em;
@@ -378,6 +365,8 @@ span {
         transition: .5s; }
       .gw-contacts-subcsribe__button:hover::before {
         left: 0; }
+    .gw-contacts-subcsribe__social:hover {
+      opacity: .5; }
 
 .subscribe {
   font-size: 1em;

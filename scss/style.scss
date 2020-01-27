@@ -8,46 +8,46 @@ body{
 
 // start loader
 
-.preloader{
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    z-index: 5;
-    transition: 1s;
-    opacity: 1;
-    visibility: visible;
+// .preloader{
+//     position: fixed;
+//     left: 0;
+//     top: 0;
+//     width: 100%;
+//     height: 100%;
+//     background: #000;
+//     z-index: 5;
+//     transition: 1s;
+//     opacity: 1;
+//     visibility: visible;
 
-    &.done{
-        opacity: 0;
-        visibility: hidden;
-    }
-}
+//     &.done{
+//         opacity: 0;
+//         visibility: hidden;
+//     }
+// }
 
-.loader{
-    width: 200px;
-    height: 200px;
-    border: 10px solid white;
-    border-top-color: #958177;
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    animation: 3s loader infinite linear;
-}
+// .loader{
+//     width: 200px;
+//     height: 200px;
+//     border: 10px solid white;
+//     border-top-color: #958177;
+//     border-radius: 50%;
+//     position: absolute;
+//     left: 50%;
+//     top: 50%;
+//     transform: translate(-50%, -50%);
+//     animation: 3s loader infinite linear;
+// }
 
-@keyframes loader{
-    from{
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
+// @keyframes loader{
+//     from{
+//         transform: translate(-50%, -50%) rotate(0deg);
+//     }
 
-    to{
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
-}
+//     to{
+//         transform: translate(-50%, -50%) rotate(360deg);
+//     }
+// }
 
 // end loader
 
@@ -187,6 +187,7 @@ video{
 
     &:hover{
         cursor: pointer;
+        opacity: .7;
     }
 }
 
@@ -198,6 +199,7 @@ video{
 
     &:hover{
         cursor: pointer;
+        opacity: .7;
     }
 }
 
@@ -285,6 +287,13 @@ video{
                 padding: 10px 25px;
                 border: none;
                 cursor: pointer;
+
+                &:hover,
+                &:active,
+                &:focus-within{
+                    background-color: #000;
+                    color: #f2efee;
+                }    
             }
         }
     }
@@ -349,6 +358,17 @@ video{
     display: none;
 }
 
+.gw-discography-album__item-left{
+    width: 100%;
+}
+
+.gw-discography-album__item-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 // end discography
 
 // start tours
@@ -378,6 +398,8 @@ video{
             color: #826b60;
             text-transform: uppercase;
             padding: 20px 0;
+            text-align: center;
+            transform: rotate(90deg);
         }
     }
 
@@ -396,6 +418,7 @@ video{
             position: relative;
             padding: 1.35rem 0;
             border-bottom: 2px dotted #826b60;
+            text-transform: uppercase;
 
             &-date{
                 font-size: 3.6em;
@@ -425,6 +448,13 @@ video{
                 padding: 10px 25px;
                 border: none;
                 cursor: pointer;
+                
+                &:hover,
+                &:active,
+                &:focus-within{
+                    background-color: #000;
+                    color: #f2efee;
+                }
             }
         }
     }
@@ -454,7 +484,6 @@ span{
         text-transform: uppercase;
         color: #241c18;
         margin: 0;
-
     }
 
     &-phone{
@@ -510,6 +539,10 @@ span{
             &:hover::before{
                 left: 0;
             }
+        }
+
+        &__social:hover{
+            opacity: .5;
         }
     }
 }
