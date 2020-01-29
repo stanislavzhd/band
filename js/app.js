@@ -18,6 +18,10 @@ $('.gw-slider').slick({
 let filter = $("[data-filter]");
 filter.on("click", function () {
 
+    const albumTitle = $(this).closest('.gw-discography-album__item').find('.gw-discography-album__item-name').text();
+
+    $('.gw-discography-playlist__album-name').text(albumTitle).show();
+
     let cat = $(this).data("filter");
 
     $("[data-cat]").each(function () {

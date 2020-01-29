@@ -34,10 +34,17 @@ body {
     text-transform: uppercase;
     color: #e4dddb;
     padding-top: 7.5rem; }
+    @media screen and (max-width: 768px) {
+      .gw-header__title {
+        font-size: 4.5em;
+        padding-top: 2.5rem; } }
 
 .title {
   color: #e4dddb;
   font-size: 5.5em; }
+  @media screen and (max-width: 768px) {
+    .title {
+      font-size: 4.5em; } }
 
 .gw-nav {
   position: relative;
@@ -47,12 +54,19 @@ body {
   display: flex;
   padding-top: 2.5rem;
   z-index: 3; }
+  @media screen and (max-width: 768px) {
+    .gw-nav {
+      display: flex;
+      align-items: center; } }
   .gw-nav__item {
     padding-right: 25px;
     color: #e4dddb;
     text-decoration: none; }
     .gw-nav__item:hover {
       color: #000; }
+  @media screen and (max-width: 768px) {
+    .gw-nav {
+      font-size: .75em; } }
 
 video {
   position: absolute;
@@ -71,6 +85,9 @@ video {
   position: relative;
   max-width: 90%;
   margin: 0 auto; }
+  @media screen and (max-width: 768px) {
+    .gw-slider {
+      max-width: 100%; } }
   .gw-slider__image {
     max-width: 100%; }
   .gw-slider__block {
@@ -87,6 +104,16 @@ video {
     text-align: center;
     padding-top: 5rem;
     padding-left: 17rem; }
+    @media screen and (max-width: 768px) {
+      .gw-slider__text {
+        font-size: 1em;
+        text-align: center;
+        padding-top: .5rem;
+        padding-left: 0;
+        align-items: center;
+        left: 3.75rem;
+        bottom: 10.625rem;
+        width: 100%; } }
     .gw-slider__text--name {
       color: #826b60;
       margin: 0; }
@@ -97,11 +124,19 @@ video {
     position: absolute;
     bottom: 4em;
     right: 6rem; }
+    @media screen and (max-width: 768px) {
+      .gw-slider__textarea {
+        width: 100%;
+        position: initial; } }
   .gw-slider__title {
     font-size: 2em;
     font-weight: 400;
     margin: 0;
     text-align: center; }
+    @media screen and (max-width: 768px) {
+      .gw-slider__title {
+        font-size: 1em;
+        padding-top: .5rem; } }
   .gw-slider__description {
     font-family: 'Lora', serif;
     font-size: 1em;
@@ -110,6 +145,10 @@ video {
     padding-top: 2.75rem;
     line-height: 2;
     color: #241c18; }
+    @media screen and (max-width: 768px) {
+      .gw-slider__description {
+        font-size: .5em;
+        padding-top: .75rem; } }
 
 .prev {
   position: absolute;
@@ -120,6 +159,10 @@ video {
   .prev:hover {
     cursor: pointer;
     opacity: .7; }
+  @media screen and (max-width: 768px) {
+    .prev {
+      height: 10%;
+      top: 35%; } }
 
 .next {
   position: absolute;
@@ -129,6 +172,10 @@ video {
   .next:hover {
     cursor: pointer;
     opacity: .7; }
+  @media screen and (max-width: 768px) {
+    .next {
+      height: 10%;
+      top: 35%; } }
 
 .gw-music {
   background-color: #f8f8f8; }
@@ -137,12 +184,25 @@ video {
   background-color: #f8f8f8;
   display: flex;
   justify-content: space-between; }
+  @media screen and (max-width: 768px) {
+    .gw-discography {
+      display: initial;
+      justify-content: initial; } }
   .gw-discography-album {
     width: 45%; }
+    @media screen and (max-width: 768px) {
+      .gw-discography-album {
+        width: 100%; } }
     .gw-discography-album__image {
       max-width: 100%;
       height: auto;
       padding-top: 6.25rem; }
+      @media screen and (max-width: 768px) {
+        .gw-discography-album__image {
+          padding-top: 2.25rem;
+          position: absolute;
+          right: 71%;
+          max-width: 75%; } }
     .gw-discography-album__title {
       margin: 0;
       padding-top: 4.6875rem;
@@ -150,25 +210,45 @@ video {
       font-weight: 400;
       font-size: 3em;
       text-transform: capitalize; }
+      @media screen and (max-width: 768px) {
+        .gw-discography-album__title {
+          padding-bottom: 3rem;
+          font-size: 2em;
+          text-align: center; } }
     .gw-discography-album__list {
       padding-bottom: 5.625rem; }
+      @media screen and (max-width: 768px) {
+        .gw-discography-album__list {
+          padding-bottom: .5rem; } }
     .gw-discography-album__item {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin: 0;
       padding-bottom: 2.5rem; }
+      @media screen and (max-width: 768px) {
+        .gw-discography-album__item {
+          padding-bottom: 1rem; } }
       .gw-discography-album__item-name {
         font-size: 1.66em;
         font-weight: 300;
         margin: 0; }
+        @media screen and (max-width: 768px) {
+          .gw-discography-album__item-name {
+            font-size: .7em; } }
       .gw-discography-album__item-delimiter {
         max-width: 100%;
         height: auto; }
+        @media screen and (max-width: 768px) {
+          .gw-discography-album__item-delimiter {
+            max-width: 0; } }
       .gw-discography-album__item-year {
         font-size: 1.66em;
         font-weight: 300;
         margin: 0; }
+        @media screen and (max-width: 768px) {
+          .gw-discography-album__item-year {
+            font-size: .7em; } }
       .gw-discography-album__item-listen {
         font-size: 1em;
         font-weight: 400;
@@ -181,6 +261,10 @@ video {
         .gw-discography-album__item-listen:hover, .gw-discography-album__item-listen:active, .gw-discography-album__item-listen:focus-within {
           background-color: #000;
           color: #f2efee; }
+        @media screen and (max-width: 768px) {
+          .gw-discography-album__item-listen {
+            font-size: .5em;
+            padding: 5px 10px; } }
       .gw-discography-album__item-buy {
         font-size: 1em;
         font-weight: 400;
@@ -193,15 +277,29 @@ video {
         .gw-discography-album__item-buy:hover, .gw-discography-album__item-buy:active, .gw-discography-album__item-buy:focus-within {
           background-color: #000;
           color: #f2efee; }
+        @media screen and (max-width: 768px) {
+          .gw-discography-album__item-buy {
+            font-size: .5em;
+            padding: 5px 15px; } }
   .gw-discography-playlist {
     width: 45%; }
+    @media screen and (max-width: 768px) {
+      .gw-discography-playlist {
+        width: 100%; } }
     .gw-discography-playlist__album {
       padding-top: 30rem; }
+      @media screen and (max-width: 768px) {
+        .gw-discography-playlist__album {
+          padding-top: 0; } }
       .gw-discography-playlist__album-name {
         font-size: 1.66em;
         font-weight: 300;
         margin: 0;
         padding-bottom: 2.25rem; }
+        @media screen and (max-width: 768px) {
+          .gw-discography-playlist__album-name {
+            font-size: 1em;
+            padding-bottom: 1rem; } }
       .gw-discography-playlist__album-list {
         overflow: auto;
         overflow-x: hidden;
@@ -223,6 +321,9 @@ video {
           font-size: 1rem;
           color: #826b60;
           font-style: italic; }
+          @media screen and (max-width: 768px) {
+            .gw-discography-playlist__album-item-name {
+              font-size: .7em; } }
         .gw-discography-playlist__album-item-time {
           position: absolute;
           right: 0;
@@ -232,6 +333,9 @@ video {
           font-size: 1rem;
           color: #826b60;
           font-style: italic; }
+          @media screen and (max-width: 768px) {
+            .gw-discography-playlist__album-item-time {
+              font-size: .7em; } }
 
 .hide {
   display: none; }
@@ -266,8 +370,7 @@ video {
       color: #826b60;
       text-transform: uppercase;
       padding: 20px 0;
-      text-align: center;
-      transform: rotate(90deg); }
+      text-align: center; }
   .gw-tours-dates {
     position: relative;
     margin: 0 auto;
@@ -316,6 +419,10 @@ span {
   font-weight: 700;
   color: #241c18;
   text-transform: uppercase; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
 
 .gw-contacts {
   text-align: center;

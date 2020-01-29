@@ -70,7 +70,7 @@
                         <div class="gw-slider__slide">
                             <img class="gw-slider__image" src="images/EmmaCabello.png" alt="EmmaCabello">
                             <div class="gw-slider__block">
-                                <div class="gw-slider__text wow bounceInLeft">
+                                <div class="gw-slider__text">
                                     <h2 class="gw-slider__text--name">Emma</h2>
                                     <span class="gw-slider__text--surname">Cabello</span>
                                 </div>
@@ -87,7 +87,7 @@
                         <div class="gw-slider__slide">
                             <img class="gw-slider__image" src="images/JohnLegend.png" alt="JohnLegend">
                             <div class="gw-slider__block">
-                                <div class="gw-slider__text wow bounceInLeft">
+                                <div class="gw-slider__text">
                                     <h2 class="gw-slider__text--name">John</h2>
                                     <span class="gw-slider__text--surname">Legend</span>
                                 </div>
@@ -104,7 +104,7 @@
                         <div class="gw-slider__slide">
                             <img class="gw-slider__image" src="images/LaurenDaigle.png" alt="LaurenDaigle">
                             <div class="gw-slider__block">
-                                <div class="gw-slider__text wow bounceInLeft">
+                                <div class="gw-slider__text">
                                     <h2 class="gw-slider__text--name">Lauren</h2>
                                     <span class="gw-slider__text--surname">Daigle</span>
                                 </div>
@@ -120,7 +120,7 @@
                         <div class="gw-slider__slide">
                             <img class="gw-slider__image" src="images/Kim Seok-Jin.png" alt="KimSeok-Jin">
                             <div class="gw-slider__block">
-                                <div class="gw-slider__text wow bounceInLeft">
+                                <div class="gw-slider__text">
                                     <h2 class="gw-slider__text--name">Kim</h2>
                                     <span class="gw-slider__text--surname">Seok-Jin</span>
                                 </div>
@@ -143,8 +143,9 @@
                 <div class="container">
                     <!-- start discography -->
                     <div class="gw-discography">
-                        <div class="gw-discography-album wow flipInX">
-                            <img class="gw-discography-album__image" src="images/album.png" alt="album">
+                        <div class="gw-discography-album">
+                            <img class="gw-discography-album__image wow bounceInLeft" src="images/album.png"
+                                alt="album">
                             <p class="gw-discography-album__title">discography</p>
                             <div class="gw-discography-album__list">
                                 <div class="gw-discography-album__item">
@@ -203,7 +204,7 @@
                         </div>
                         <div class="gw-discography-playlist">
                             <div class="gw-discography-playlist__album">
-                                <p class="gw-discography-playlist__album-name" data-cat="first">Surprise Without Flaws
+                                <p class="gw-discography-playlist__album-name">Surprise Without Flaws
                                 </p>
                                 <div class="gw-discography-playlist__album-list">
                                     <div class="gw-discography-playlist__album-item" data-cat="first">
@@ -349,8 +350,8 @@
             <section class="gw-contacts"><a name="contact"></a>
                 <div class="container">
                     <div class="gw-contacts-title">contact</div>
-                    <div class="gw-contacts-phone">+48 202 - 555 - 0114</div>
-                    <div class="gw-contacts-subcsribe">
+                    <div class="gw-contacts-phone"><a href="tel:+48202-555-0114">+48 202 - 555 - 0114</a></div>
+                    <div class=" gw-contacts-subcsribe">
                         <form class="gw-contacts-subcsribe__form">
                             <button class="gw-contacts-subcsribe__button"><span
                                     class="subscribe">subscribe</span></button>
@@ -381,6 +382,10 @@
 
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
+
+    <script>
+        new WOW().init();
+    </script>
 
     <script src="js/app.js"></script>
 

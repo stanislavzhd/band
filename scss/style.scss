@@ -68,12 +68,21 @@ body{
         text-transform: uppercase;
         color: #e4dddb;
         padding-top: 7.5rem;
+
+        @media screen and (max-width: 768px){
+            font-size: 4.5em;
+            padding-top: 2.5rem;
+        }
     }
 }
 
 .title{
     color: #e4dddb;
     font-size: 5.5em;
+
+    @media screen and (max-width: 768px){
+        font-size: 4.5em;
+    }
 }
 
 .gw-nav{
@@ -84,6 +93,11 @@ body{
     display: flex;
     padding-top: 2.5rem; 
     z-index: 3;
+
+    @media screen and (max-width: 768px){
+        display: flex;
+        align-items: center;
+    }
     
     &__item{
         padding-right: 25px;
@@ -93,6 +107,10 @@ body{
         &:hover{
             color: #000
         }
+    }
+
+    @media screen and (max-width: 768px){
+        font-size: .75em;
     }
 }
 
@@ -121,6 +139,10 @@ video{
     position: relative;
     max-width: 90%;
     margin: 0 auto;
+
+    @media screen and (max-width: 768px){
+        max-width: 100%;
+    }
     
     &__image{
         max-width: 100%;
@@ -143,6 +165,17 @@ video{
         padding-top: 5rem;
         padding-left: 17rem;
 
+        @media screen and (max-width: 768px){
+            font-size: 1em;  
+            text-align: center;
+            padding-top: .5rem;
+            padding-left: 0;
+            align-items: center;
+            left: 3.75rem;
+            bottom: 10.625rem;
+            width: 100%; 
+        }
+
         &--name{
             color: #826b60;
             margin: 0;
@@ -158,6 +191,11 @@ video{
         position: absolute;
         bottom: 4em;
         right: 6rem;
+
+        @media screen and (max-width: 768px){
+            width: 100%;
+            position: initial;
+        }
     }
 
     &__title{
@@ -165,6 +203,11 @@ video{
         font-weight: 400;
         margin: 0;
         text-align: center;
+
+        @media screen and (max-width: 768px){
+            font-size: 1em;
+            padding-top: .5rem;
+        }
     }
 
     &__description{
@@ -175,6 +218,11 @@ video{
         padding-top: 2.75rem;
         line-height: 2;
         color: #241c18;
+
+        @media screen and (max-width: 768px){
+            font-size: .5em;  
+            padding-top: .75rem;
+        } 
     }
 }
 
@@ -189,6 +237,11 @@ video{
         cursor: pointer;
         opacity: .7;
     }
+
+    @media screen and (max-width: 768px){
+        height: 10%;
+        top: 35%;
+    }
 }
 
 .next{
@@ -200,6 +253,11 @@ video{
     &:hover{
         cursor: pointer;
         opacity: .7;
+    }
+
+    @media screen and (max-width: 768px){
+        height: 10%;
+        top: 35%;
     }
 }
 
@@ -214,13 +272,29 @@ video{
     display: flex;
     justify-content: space-between;
 
+    @media screen and (max-width: 768px){
+        display: initial;
+        justify-content: initial;
+    }
+
     &-album{
         width: 45%;
+
+        @media screen and (max-width: 768px){
+            width: 100%;
+        }
 
         &__image{
             max-width: 100%;
             height: auto;
             padding-top: 6.25rem;
+
+            @media screen and (max-width: 768px){
+                padding-top: 2.25rem;
+                position: absolute;
+                right: 71%;
+                max-width: 75%;
+            }
         }
 
         &__title{
@@ -230,10 +304,20 @@ video{
             font-weight: 400;
             font-size: 3em;
             text-transform: capitalize;
+
+            @media screen and (max-width: 768px){
+                padding-bottom: 3rem;
+                font-size: 2em;
+                text-align: center;
+            }
         }
 
         &__list{
             padding-bottom: 5.625rem;
+
+            @media screen and (max-width: 768px){
+                padding-bottom: .5rem;
+            }
         }
 
         &__item{
@@ -242,22 +326,38 @@ video{
             align-items: center;
             margin: 0;
             padding-bottom: 2.5rem;
+
+            @media screen and (max-width: 768px){
+                padding-bottom: 1rem;
+            }
         
             &-name{
                 font-size: 1.66em;
                 font-weight: 300;
                 margin: 0;
+
+                @media screen and (max-width: 768px){
+                    font-size: .7em;
+                }
             }
 
             &-delimiter{
                 max-width: 100%;
                 height: auto;
+
+                @media screen and (max-width: 768px){
+                    max-width: 0;
+                }
             }
 
             &-year{
                 font-size: 1.66em;
                 font-weight: 300;
                 margin: 0;
+
+                @media screen and (max-width: 768px){
+                    font-size: .7em;
+                }
             }
 
             &-listen{
@@ -275,6 +375,11 @@ video{
                 &:focus-within{
                     background-color: #000;
                     color: #f2efee;
+                }
+
+                @media screen and (max-width: 768px){
+                    font-size: .5em;
+                    padding: 5px 10px;
                 }
             }
 
@@ -294,6 +399,11 @@ video{
                     background-color: #000;
                     color: #f2efee;
                 }    
+
+                @media screen and (max-width: 768px){
+                    font-size: .5em;
+                    padding: 5px 15px;
+                }
             }
         }
     }
@@ -301,14 +411,28 @@ video{
     &-playlist{
         width: 45%;
 
+        @media screen and (max-width: 768px){
+            width: 100%;
+        }
+
         &__album{
             padding-top: 30rem; 
             // убрать padding-top после того как добавится блок наверху
+
+            @media screen and (max-width: 768px){
+                padding-top: 0;
+            }
+
             &-name{
                 font-size: 1.66em;
                 font-weight: 300;
                 margin: 0;
                 padding-bottom: 2.25rem;
+
+                @media screen and (max-width: 768px){
+                    font-size: 1em;
+                    padding-bottom: 1rem;
+                }
             }
 
             &-list{
@@ -337,6 +461,10 @@ video{
                     font-size: 1rem;
                     color: #826b60;
                     font-style: italic;
+
+                    @media screen and (max-width: 768px){
+                        font-size: .7em;
+                    }
                 }
 
                 &-time{
@@ -348,6 +476,10 @@ video{
                     font-size: 1rem;
                     color: #826b60;
                     font-style: italic;
+
+                    @media screen and (max-width: 768px){
+                        font-size: .7em;
+                    }
                 }
             }
         }
@@ -399,7 +531,7 @@ video{
             text-transform: uppercase;
             padding: 20px 0;
             text-align: center;
-            transform: rotate(90deg);
+            // transform: rotate(90deg);
         }
     }
 
@@ -470,6 +602,11 @@ span{
 // end tours
 
 // start contacts
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
 
 .gw-contacts{
     text-align: center;
