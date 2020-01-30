@@ -11,6 +11,43 @@ body {
   font-size: 18px;
   background-size: cover; }
 
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 10;
+  transition: 1s;
+  opacity: 1;
+  visibility: visible; }
+  .preloader.done {
+    opacity: 0;
+    visibility: hidden; }
+
+.loader {
+  width: 200px;
+  height: 200px;
+  border: 10px solid white;
+  border-top-color: #958177;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: 3s loader infinite linear; }
+  @media screen and (max-width: 768px) {
+    .loader {
+      width: 120px;
+      height: 120px; } }
+
+@keyframes loader {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg); }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg); } }
+
 .container {
   padding-left: 15px;
   padding-right: 15px; }
@@ -344,6 +381,9 @@ video {
 .gw-tours {
   background-color: #f1eeed;
   padding-bottom: 7.5rem; }
+  @media screen and (max-width: 768px) {
+    .gw-tours {
+      padding-bottom: 1.5rem; } }
   .gw-tours-title {
     padding-top: 5rem;
     padding-bottom: 3.75rem;
@@ -352,6 +392,11 @@ video {
     color: #241c18;
     text-transform: capitalize;
     text-align: center; }
+    @media screen and (max-width: 768px) {
+      .gw-tours-title {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        font-size: 2em; } }
   .gw-tours-slider {
     position: relative;
     max-width: 80%;
@@ -363,6 +408,9 @@ video {
       text-transform: uppercase;
       padding: 20px 0;
       text-align: center; }
+      @media screen and (max-width: 768px) {
+        .gw-tours-slider__content {
+          font-size: .6em; } }
   .gw-tours-dates {
     position: relative;
     margin: 0 auto;
@@ -371,6 +419,9 @@ video {
     overflow-x: hidden;
     width: 100%;
     height: 22.5625rem; }
+    @media screen and (max-width: 768px) {
+      .gw-tours-dates {
+        padding: 0; } }
     .gw-tours-dates__item {
       display: flex;
       align-items: center;
@@ -384,12 +435,18 @@ video {
         color: #241c18;
         padding-right: 0.625rem;
         margin: 0; }
+        @media screen and (max-width: 768px) {
+          .gw-tours-dates__item-date {
+            font-size: 2.6em; } }
       .gw-tours-dates__item-name {
         font-size: 1.66em;
         font-weight: 300;
         color: #241c18;
         padding-left: 1.25rem;
         margin: 0; }
+        @media screen and (max-width: 768px) {
+          .gw-tours-dates__item-name {
+            font-size: 1em; } }
       .gw-tours-dates__item-buy {
         position: absolute;
         right: 0;
@@ -405,12 +462,20 @@ video {
         .gw-tours-dates__item-buy:hover, .gw-tours-dates__item-buy:active, .gw-tours-dates__item-buy:focus-within {
           background-color: #000;
           color: #f2efee; }
+        @media screen and (max-width: 768px) {
+          .gw-tours-dates__item-buy {
+            top: 4.375rem;
+            font-size: .5em;
+            padding: 5px 10px; } }
 
 span {
   font-size: 1.377em;
   font-weight: 700;
   color: #241c18;
   text-transform: uppercase; }
+  @media screen and (max-width: 768px) {
+    span {
+      font-size: 1em; } }
 
 a {
   text-decoration: none;
@@ -422,12 +487,18 @@ a {
   background-image: url(../images/background_footer.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
+  @media screen and (max-width: 768px) {
+    .gw-contacts {
+      padding-top: 1rem; } }
   .gw-contacts-title {
     font-size: 4.444em;
     font-weight: 700;
     text-transform: uppercase;
     color: #241c18;
     margin: 0; }
+    @media screen and (max-width: 768px) {
+      .gw-contacts-title {
+        font-size: 3em; } }
   .gw-contacts-phone {
     width: 45%;
     font-size: 4em;
@@ -436,6 +507,11 @@ a {
     margin: 0 auto;
     padding-bottom: 2rem;
     border-bottom: 2px dotted #e4dddb; }
+    @media screen and (max-width: 768px) {
+      .gw-contacts-phone {
+        width: 80%;
+        font-size: 1.5em;
+        padding: 1rem 0; } }
   .gw-contacts-subcsribe {
     display: flex;
     justify-content: space-between;
@@ -444,8 +520,17 @@ a {
     margin: 0 auto;
     padding-top: 2.25rem;
     padding-bottom: 25rem; }
+    @media screen and (max-width: 768px) {
+      .gw-contacts-subcsribe {
+        width: 100%;
+        display: initial; } }
     .gw-contacts-subcsribe__form {
       width: 75%; }
+      @media screen and (max-width: 768px) {
+        .gw-contacts-subcsribe__form {
+          width: 80%;
+          margin: 0 auto;
+          padding: 1.5rem 0; } }
     .gw-contacts-subcsribe__button {
       width: 100%;
       height: 3.375rem;
@@ -470,10 +555,23 @@ a {
         top: 0;
         left: -100%;
         transition: .5s; }
-      .gw-contacts-subcsribe__button:hover::before {
+      .gw-contacts-subcsribe__button:hover::before, .gw-contacts-subcsribe__button:focus-within::before {
         left: 0; }
+      @media screen and (max-width: 768px) {
+        .gw-contacts-subcsribe__button {
+          width: 100%;
+          font-size: 1em;
+          border: 2px solid #241c18;
+          padding-left: 1rem;
+          height: 2.5rem; } }
     .gw-contacts-subcsribe__social:hover {
       opacity: .5; }
+    @media screen and (max-width: 768px) {
+      .gw-contacts-subcsribe__social {
+        padding: 0 0.625rem; } }
+    @media screen and (max-width: 768px) {
+      .gw-contacts-subcsribe__social--img {
+        max-width: 20%; } }
 
 .subscribe {
   font-size: 1em;
@@ -489,12 +587,18 @@ a {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 4.8125rem; }
+  @media screen and (max-width: 768px) {
+    .gw-footer-block {
+      padding: 1rem 0; } }
 
 .gw-footer-copyright {
   font-size: 1em;
   font-weight: 700;
   color: #e4dddb;
   text-transform: uppercase; }
+  @media screen and (max-width: 768px) {
+    .gw-footer-copyright {
+      font-size: 0; } }
 
 .gw-footer-nav {
   font-family: 'Lora', serif;
@@ -508,3 +612,7 @@ a {
     .gw-footer-nav__item:hover {
       color: #000;
       border-bottom: 2px solid #fff; }
+    @media screen and (max-width: 768px) {
+      .gw-footer-nav__item {
+        font-size: .5em;
+        padding: 0 .2rem 0 .2rem; } }
